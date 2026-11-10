@@ -1,0 +1,197 @@
+/* ============================================
+   Recruit Page Styles
+   ============================================ */
+
+/* ── Recruit Intro ── */
+.recruit-intro {
+    text-align: center;
+    max-width: 640px;
+    margin-inline: auto;
+}
+
+.recruit-intro__text {
+    font-family: var(--font-display);
+    font-size: clamp(1.15rem, 2vw, 1.5rem);
+    font-weight: var(--font-weight-light);
+    color: var(--color-stone);
+    line-height: 2;
+}
+
+.recruit-intro__text em {
+    font-style: normal;
+    color: var(--color-charcoal);
+}
+
+/* ── Stats Row ── */
+.recruit-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    max-width: 800px;
+    margin-inline: auto;
+    margin-top: var(--space-2xl);
+}
+
+.recruit-stat {
+    text-align: center;
+    padding: var(--space-lg) var(--space-sm);
+}
+
+.recruit-stat__value {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: var(--font-weight-light);
+    color: var(--color-gold);
+    line-height: 1;
+    margin-bottom: var(--space-xs);
+}
+
+.recruit-stat__label {
+    font-family: var(--font-accent);
+    font-size: 10px;
+    letter-spacing: var(--letter-spacing-widest);
+    text-transform: uppercase;
+    color: var(--color-warm-gray);
+}
+
+/* ── Benefits Grid ── */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+}
+
+.benefit-card {
+    padding: var(--space-xl);
+    border: 1px solid var(--color-linen);
+    transition: border-color var(--transition-base);
+}
+
+.benefit-card:hover {
+    border-color: rgba(var(--color-gold-rgb), 0.3);
+}
+
+.benefit-card__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gold);
+    margin-bottom: var(--space-md);
+}
+
+.benefit-card__icon i {
+    width: 24px;
+    height: 24px;
+}
+
+.benefit-card__title {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-sm);
+}
+
+.benefit-card__text {
+    font-size: var(--font-size-sm);
+    color: var(--color-warm-gray);
+    line-height: var(--line-height-body);
+}
+
+/* ── Requirements Table ── */
+.requirement-table {
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.requirement-table tr {
+    border-bottom: 1px solid var(--color-linen);
+}
+
+.requirement-table th,
+.requirement-table td {
+    padding: var(--space-md) var(--space-sm);
+    font-size: var(--font-size-sm);
+    text-align: left;
+    vertical-align: top;
+}
+
+.requirement-table th {
+    font-family: var(--font-accent);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-wide);
+    color: var(--color-warm-gray);
+    width: 140px;
+    white-space: nowrap;
+}
+
+.requirement-table td {
+    color: var(--color-charcoal);
+    line-height: var(--line-height-body);
+}
+
+/* ── Voices / Testimonials ── */
+.voices-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.voice-card {
+    padding: var(--space-xl);
+    background: var(--color-white);
+    border: 1px solid var(--color-linen);
+}
+
+.voice-card__quote {
+    font-size: var(--font-size-sm);
+    color: var(--color-stone);
+    line-height: var(--line-height-body);
+    margin-bottom: var(--space-md);
+    font-style: italic;
+}
+
+.voice-card__quote::before {
+    content: '"';
+    font-family: var(--font-display);
+    font-size: var(--font-size-2xl);
+    color: var(--color-gold);
+    line-height: 0;
+    vertical-align: -0.3em;
+    margin-right: 4px;
+}
+
+.voice-card__author {
+    font-family: var(--font-accent);
+    font-size: 10px;
+    letter-spacing: var(--letter-spacing-widest);
+    text-transform: uppercase;
+    color: var(--color-warm-gray);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .recruit-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .voices-grid {
+        grid-template-columns: 1fr;
+    }
+}

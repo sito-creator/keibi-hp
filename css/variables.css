@@ -1,0 +1,111 @@
+/* ============================================
+   NT Partner Support — Design Tokens
+   Aman-inspired quiet luxury system
+   ============================================ */
+:root {
+  /* ── Colors: Quiet Luxury ── */
+  --color-black: #0B0B0B;
+  --color-charcoal: #1A1A1A;
+  --color-dark: #111111;
+  --color-navy: #0C1B2A;
+  --color-navy-deep: #071422;
+  --color-ink: #2C2C2C;
+  --color-stone: #3D3D3D;
+  --color-warm-gray: #8C8578;
+  --color-sand: #B5A998;
+  --color-linen: #E8E2DA;
+  --color-cream: #F5F2ED;
+  --color-ivory: #FAF8F5;
+  --color-white: #FFFFFF;
+  --color-gold: #C4A265;
+  --color-gold-muted: #A8935C;
+  --color-gold-light: #D4BC84;
+
+  /* RGB variants */
+  --color-black-rgb: 11, 11, 11;
+  --color-white-rgb: 255, 255, 255;
+  --color-gold-rgb: 196, 162, 101;
+  --color-navy-rgb: 12, 27, 42;
+
+  /* ── Typography ── */
+  --font-display: 'Cormorant Garamond', 'Noto Serif JP', serif;
+  --font-body: 'Noto Sans JP', 'Inter', sans-serif;
+  --font-accent: 'Inter', sans-serif;
+
+  --font-size-xs: 0.6875rem;
+  /* 11px */
+  --font-size-sm: 0.8125rem;
+  /* 13px */
+  --font-size-base: 0.9375rem;
+  /* 15px */
+  --font-size-md: 1.0625rem;
+  /* 17px */
+  --font-size-lg: 1.25rem;
+  /* 20px */
+  --font-size-xl: 1.5rem;
+  /* 24px */
+  --font-size-2xl: 2rem;
+  /* 32px */
+  --font-size-3xl: 2.75rem;
+  /* 44px */
+  --font-size-4xl: 3.5rem;
+  /* 56px */
+  --font-size-hero: clamp(2.5rem, 6vw, 4.5rem);
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-heading: 1.35;
+  --line-height-body: 1.9;
+  --line-height-loose: 2.2;
+
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-base: 0.04em;
+  --letter-spacing-wide: 0.12em;
+  --letter-spacing-widest: 0.2em;
+
+  /* ── Spacing (generous, Aman-like) ── */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+  --space-4xl: 12rem;
+  --space-section: clamp(6rem, 12vw, 12rem);
+
+  /* ── Layout ── */
+  --container-max: 1100px;
+  --container-narrow: 720px;
+  --container-wide: 1400px;
+  --container-padding: clamp(1.5rem, 5vw, 3rem);
+  --header-height: 72px;
+
+  /* ── Borders ── */
+  --border-subtle: 1px solid rgba(var(--color-white-rgb), 0.08);
+  --border-light: 1px solid var(--color-linen);
+
+  /* ── Shadows ── */
+  --shadow-subtle: 0 2px 20px rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 8px 40px rgba(0, 0, 0, 0.08);
+  --shadow-deep: 0 20px 60px rgba(0, 0, 0, 0.12);
+
+  /* ── Transitions ── */
+  --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 200ms var(--ease-smooth);
+  --transition-base: 400ms var(--ease-smooth);
+  --transition-slow: 800ms var(--ease-out);
+  --transition-very-slow: 1200ms var(--ease-out);
+
+  /* ── Z-Index ── */
+  --z-base: 1;
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+}

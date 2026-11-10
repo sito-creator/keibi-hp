@@ -1,0 +1,9 @@
+.DS_Store
+.obsidian/
+.codex/
+.agents/
+.env
+.env.*
+node_modules/
+ntps_agent_brief.md
+ntps_requirements_and_agent_brief.docx

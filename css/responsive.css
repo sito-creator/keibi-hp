@@ -1,0 +1,15 @@
+/* ============================================
+   Responsive — Additional breakpoints
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .service-item__content {
+        padding: var(--space-2xl);
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-height: 60px;
+    }
+}

@@ -1,0 +1,127 @@
+/* ============================================
+   Components — Quiet luxury system
+   ============================================ */
+
+/* ── Buttons ── */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-family: var(--font-body);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-widest);
+    text-transform: uppercase;
+    transition: all var(--transition-base);
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* Primary — understated gold border */
+.btn--primary {
+    padding: 1rem 2.5rem;
+    background: transparent;
+    color: var(--color-gold);
+    border: 1px solid var(--color-gold);
+}
+
+.btn--primary:hover {
+    background: var(--color-gold);
+    color: var(--color-black);
+}
+
+/* Filled gold */
+.btn--gold {
+    padding: 1rem 2.5rem;
+    background: var(--color-gold);
+    color: var(--color-black);
+    border: 1px solid var(--color-gold);
+}
+
+.btn--gold:hover {
+    background: var(--color-gold-light);
+    border-color: var(--color-gold-light);
+}
+
+/* Ghost — minimal border */
+.btn--ghost {
+    padding: 1rem 2.5rem;
+    background: transparent;
+    color: var(--color-white);
+    border: 1px solid rgba(var(--color-white-rgb), 0.25);
+}
+
+.btn--ghost:hover {
+    border-color: rgba(var(--color-white-rgb), 0.6);
+    color: var(--color-white);
+}
+
+/* Text link with arrow */
+.btn--text {
+    padding: 0;
+    color: var(--color-gold);
+    border: none;
+    background: none;
+    gap: 0.5rem;
+}
+
+.btn--text::after {
+    content: '→';
+    transition: transform var(--transition-base);
+}
+
+.btn--text:hover::after {
+    transform: translateX(4px);
+}
+
+/* Dark variant */
+.btn--dark {
+    padding: 1rem 2.5rem;
+    background: transparent;
+    color: var(--color-charcoal);
+    border: 1px solid var(--color-charcoal);
+}
+
+.btn--dark:hover {
+    background: var(--color-charcoal);
+    color: var(--color-cream);
+}
+
+.btn i {
+    width: 14px;
+    height: 14px;
+}
+
+/* ── Horizontal Rule ── */
+.hr {
+    border: none;
+    height: 1px;
+    background: var(--color-linen);
+}
+
+.hr--gold {
+    background: var(--color-gold);
+    width: 40px;
+}
+
+.hr--center {
+    margin-inline: auto;
+}
+
+.section--dark .hr,
+.section--navy .hr {
+    background: rgba(var(--color-white-rgb), 0.1);
+}
+
+/* ── Badge ── */
+.badge {
+    display: inline-block;
+    font-family: var(--font-accent);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-widest);
+    text-transform: uppercase;
+    color: var(--color-gold);
+}

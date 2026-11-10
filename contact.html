@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ — Contact | NT Partner Support</title>
+    <meta name="description"
+        content="NT Partner Supportへのお問い合わせ。Executive Protection、福岡空港VIP警護、施設警備に関するご相談を24時間受付しております。">
+    <meta property="og:title" content="お問い合わせ — Contact | NT Partner Support">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <a href="#page-hero" class="skip-nav">メインコンテンツへスキップ</a>
+
+    <!-- HEADER -->
+    <header class="header header--scrolled" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" id="logo">
+                <span class="header__logo-name">NT Partner Support</span>
+                <span class="header__logo-tagline">Executive Protection</span>
+            </a>
+            <nav class="header__nav" id="main-nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html#services" class="header__nav-link">Services</a></li>
+                    <li><a href="index.html#credentials" class="header__nav-link">Credentials</a></li>
+                    <li><a href="company.html" class="header__nav-link">Company</a></li>
+                    <li><a href="recruit.html" class="header__nav-link">Careers</a></li>
+                    <li>
+                        <button class="header__lang" id="lang-toggle">
+                            <i data-lucide="globe"></i><span>JA</span>
+                        </button>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn--primary header__nav-cta" id="nav-cta">Enquire</a>
+            </nav>
+            <div style="display:flex;align-items:center;gap:var(--space-sm);">
+                <button class="header__lang header__lang-mobile" id="lang-toggle">
+                    <i data-lucide="globe"></i>
+                    <span>JA</span>
+                </button>
+                <button class="header__hamburger" id="hamburger" aria-label="メニュー">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="header__mobile-menu" id="mobile-menu">
+        <a href="index.html#services" class="header__nav-link">Services</a>
+        <a href="index.html#credentials" class="header__nav-link">Credentials</a>
+        <a href="company.html" class="header__nav-link">Company</a>
+        <a href="recruit.html" class="header__nav-link">Careers</a>
+        <button class="header__lang" id="lang-toggle" style="margin: var(--space-sm) 0;">
+            <i data-lucide="globe"></i>
+            <span>JA</span>
+        </button>
+        <a href="contact.html" class="btn btn--primary">Enquire</a>
+    </div>
+
+    <!-- ════════════════════════════════════════
+       CONTACT LAYOUT
+       ════════════════════════════════════════ -->
+    <main class="contact-layout" style="padding-top: var(--header-height);">
+
+        <!-- Left: Visual + Info -->
+        <div class="contact-visual" style="background: var(--color-navy-deep);">
+            <img src="images/hero-cinematic.png" alt="NT Partner Support" width="960" height="1080">
+            <div class="contact-visual__overlay">
+                <p class="contact-visual__label" data-i18n="ct.label">Contact Us</p>
+                <h1 class="contact-visual__title" data-i18n="ct.title">
+                    まずはお気軽に<br>
+                    ご相談ください。
+                </h1>
+                <p class="contact-visual__text" data-i18n="ct.text">
+                    セキュリティに関するご相談を24時間受付。<br>
+                    Discreetな対応で安心してお話しいただけます。
+                </p>
+
+                <div class="contact-info-list">
+                    <div class="contact-info-item">
+                        <div class="contact-info-item__icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div>
+                            <div class="contact-info-item__label">Phone</div>
+                            <div class="contact-info-item__value">
+                                <a href="tel:092-600-7641"
+                                    style="color: var(--color-cream); font-size: var(--font-size-lg); font-weight: var(--font-weight-medium);">092-600-7641</a><br>
+                                <span style="font-size: 11px; color: var(--color-warm-gray);"
+                                    data-i18n="ct.phone.val">留守番電話にメッセージをお残しください。折り返しご連絡いたします。</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-item__icon">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <div>
+                            <div class="contact-info-item__label">Hours</div>
+                            <div class="contact-info-item__value" data-i18n="ct.hours.val">24時間受付 / 365日対応</div>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-item__icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div>
+                            <div class="contact-info-item__label">Location</div>
+                            <div class="contact-info-item__value" data-i18n="ct.loc.val">福岡県福岡市中央区赤坂一丁目8-23 5F</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrapper">
+            <div class="contact-form-header">
+                <p class="contact-form-header__label" data-i18n="ct.form.label">Enquiry Form</p>
+                <h2 class="contact-form-header__title" data-i18n="ct.form.title">お問い合わせフォーム</h2>
+            </div>
+
+            <form class="form" id="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="lastName" data-i18n="ct.form.last">姓 <span
+                                class="required">*</span></label>
+                        <input class="form-input" type="text" id="lastName" name="lastName" placeholder="山田"
+                            data-i18n-ph="ct.ph.last" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="firstName" data-i18n="ct.form.first">名 <span
+                                class="required">*</span></label>
+                        <input class="form-input" type="text" id="firstName" name="firstName" placeholder="太郎"
+                            data-i18n-ph="ct.ph.first" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="company" data-i18n="ct.form.company">会社名・団体名</label>
+                    <input class="form-input" type="text" id="company" name="company" placeholder="株式会社○○"
+                        data-i18n-ph="ct.ph.company">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="email" data-i18n="ct.form.email">メールアドレス <span
+                                class="required">*</span></label>
+                        <input class="form-input" type="email" id="email" name="email" placeholder="info@example.com"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="phone" data-i18n="ct.form.phone">電話番号</label>
+                        <input class="form-input" type="tel" id="phone" name="phone" placeholder="092-600-7641">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="service" data-i18n="ct.form.service">ご相談内容 <span
+                            class="required">*</span></label>
+                    <select class="form-select" id="service" name="service" required>
+                        <option value="" disabled selected data-i18n="ct.opt.default">サービスを選択</option>
+                        <option value="executive-protection" data-i18n="ct.opt.bp">身辺警護 / Executive Protection</option>
+                        <option value="airport-vip" data-i18n="ct.opt.ap">福岡空港VIP警護 / Secure Arrival</option>
+                        <option value="secure-transport" data-i18n="ct.opt.tr">車両移動警護 / Secure Transport</option>
+                        <option value="venue-security" data-i18n="ct.opt.ev">施設・イベント警備 / Venue Security</option>
+                        <option value="consulting" data-i18n="ct.opt.cs">セキュリティコンサルティング</option>
+                        <option value="other" data-i18n="ct.opt.other">その他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="message" data-i18n="ct.form.message">詳細・ご要望</label>
+                    <textarea class="form-textarea" id="message" name="message"
+                        placeholder="ご相談内容の詳細、ご希望の日程、人数等をお知らせください。" data-i18n-ph="ct.ph.message"></textarea>
+                </div>
+
+                <div class="form-privacy">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy" data-i18n="ct.form.privacy">
+                        <a href="privacy.html">プライバシーポリシー</a>に同意の上、送信します。
+                        お預かりした個人情報はご連絡以外の目的では使用いたしません。
+                    </label>
+                </div>
+
+                <button type="submit" class="form-submit" id="submit-btn" data-i18n="ct.form.submit">
+                    送信する
+                </button>
+            </form>
+
+            <!-- Success Message -->
+            <div class="form-success" id="form-success">
+                <div class="form-success__icon">
+                    <i data-lucide="check-circle"></i>
+                </div>
+                <h3 class="form-success__title" data-i18n="ct.ok.title">送信完了</h3>
+                <p class="form-success__text" data-i18n="ct.ok.text">
+                    お問い合わせありがとうございます。<br>
+                    担当者より24時間以内にご連絡いたします。
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="footer__brand-name">NT Partner Support</span>
+                    <span class="footer__brand-tagline">Executive Protection</span>
+                    <p class="footer__brand-desc" data-i18n="ft.desc">福岡空港を起点に、静かな威信でエグゼクティブの安全をお守りするプロテクションサービス。</p>
+                </div>
+                <div>
+                    <h3 class="footer__column-title">Services</h3>
+                    <ul class="footer__links">
+                        <li><a href="bodyguard.html" class="footer__link" data-i18n="ft.s.bp">身辺警護</a></li>
+                        <li><a href="airport-vip.html" class="footer__link" data-i18n="ft.s.ap">福岡空港VIP警護</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="ft.s.tr">車両移動警護</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="ft.s.ev">施設・イベント警備</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__column-title">Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="company.html" class="footer__link" data-i18n="ft.c.about">会社概要</a></li>
+                        <li><a href="index.html#credentials" class="footer__link" data-i18n="ft.c.cred">資格・実績</a></li>
+                        <li><a href="faq.html" class="footer__link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__column-title">Information</h3>
+                    <ul class="footer__links">
+                        <li><a href="recruit.html" class="footer__link" data-i18n="ft.i.careers">採用情報</a></li>
+                        <li><a href="contact.html" class="footer__link" data-i18n="ft.i.contact">お問い合わせ</a></li>
+                        <li><a href="/blog/" class="footer__link" data-i18n="ft.i.column">コラム</a></li>
+                        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright" data-i18n="ft.copy">&copy; 2026 株式会社NT Partner Support. All rights
+                    reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="privacy.html" class="footer__bottom-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // ─── Form Submission ───
+        // Replace this URL with your Google Apps Script Web App URL
+        const GAS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxAtCZznZnbhxAD0baLHt7VfvVKAcvfKr6C9PsF1OKPjeaf4Wk6selyQeMLizqCS0g5/exec';
+
+        const form = document.getElementById('contact-form');
+        const success = document.getElementById('form-success');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (form) {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                // Collect form data
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData.entries());
+
+                // Get current language for messages
+                const lang = localStorage.getItem('lang') || 'ja';
+                const sendingText = { ja: '送信中...', en: 'Sending...', ko: '전송 중...', zh: '发送中...', ar: '...جارٍ الإرسال' };
+                const submitText = { ja: '送信する', en: 'Submit', ko: '전송하기', zh: '提交', ar: 'إرسال' };
+                const errorText = { ja: '送信に失敗しました。お手数ですが、n.sec.20210715@gmail.com までメールにてお問い合わせください。', en: 'Submission failed. Please email n.sec.20210715@gmail.com directly.', ko: '전송에 실패했습니다. n.sec.20210715@gmail.com로 이메일로 문의해 주세요.', zh: '发送失败。请发送邮件至 n.sec.20210715@gmail.com 联系我们。', ar: 'فشل الإرسال. يرجى إرسال بريد إلكتروني إلى n.sec.20210715@gmail.com' };
+
+                // Disable button + show loading
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span style="opacity:.6">' + (sendingText[lang] || sendingText.ja) + '</span>';
+
+                try {
+                    if (GAS_ENDPOINT) {
+                        // Send to GAS Web App
+                        const res = await fetch(GAS_ENDPOINT, {
+                            method: 'POST',
+                            mode: 'no-cors',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(data)
+                        });
+                    }
+
+                    // Show success
+                    form.style.display = 'none';
+                    success.classList.add('is-visible');
+
+                } catch (err) {
+                    console.error('Form submission error:', err);
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = submitText[lang] || submitText.ja;
+                    alert(errorText[lang] || errorText.ja);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

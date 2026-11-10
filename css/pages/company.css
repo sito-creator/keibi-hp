@@ -1,0 +1,270 @@
+/* ============================================
+   Company / FAQ / Static Page Styles
+   ============================================ */
+
+/* ── Company Page ── */
+.company-message {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.company-message__text {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-weight: var(--font-weight-light);
+    color: var(--color-stone);
+    line-height: 2;
+}
+
+.company-message__text em {
+    font-style: normal;
+    color: var(--color-charcoal);
+}
+
+.company-message__image {
+    overflow: hidden;
+}
+
+.company-message__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 3 / 4;
+}
+
+.company-message__name {
+    margin-top: var(--space-xl);
+    font-family: var(--font-accent);
+    font-size: var(--font-size-xs);
+    letter-spacing: var(--letter-spacing-widest);
+    text-transform: uppercase;
+    color: var(--color-gold);
+}
+
+.company-message__role {
+    font-size: var(--font-size-xs);
+    color: var(--color-warm-gray);
+    margin-top: 2px;
+}
+
+/* Security Business Certification */
+.certification {
+    max-width: 800px;
+    margin-inline: auto;
+    color: #000;
+    background: #fff;
+}
+
+.certification__form {
+    margin-bottom: var(--space-lg);
+    font-size: var(--font-size-sm);
+}
+
+.certification__table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    line-height: 1.8;
+}
+
+.certification__table caption {
+    padding-bottom: var(--space-lg);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 0.35em;
+    text-align: center;
+}
+
+.certification__table th,
+.certification__table td {
+    padding: var(--space-lg) var(--space-md);
+    border: 1px solid #000;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+}
+
+.certification__table th {
+    width: 34%;
+    font-weight: var(--font-weight-medium);
+    text-align: left;
+}
+
+.certification__table td {
+    text-align: center;
+}
+
+.certification__download {
+    margin-top: var(--space-xl);
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .certification__table th,
+    .certification__table td {
+        padding: var(--space-md) var(--space-sm);
+    }
+
+    .certification__download .btn {
+        max-width: 100%;
+        font-size: var(--font-size-xs);
+        letter-spacing: normal;
+        white-space: normal;
+    }
+}
+
+/* Company Info Table */
+.company-table {
+    width: 100%;
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.company-table tr {
+    border-bottom: 1px solid var(--color-linen);
+}
+
+.company-table th,
+.company-table td {
+    padding: var(--space-md) var(--space-sm);
+    font-size: var(--font-size-sm);
+    text-align: left;
+    vertical-align: top;
+}
+
+.company-table th {
+    font-family: var(--font-accent);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-wide);
+    color: var(--color-warm-gray);
+    width: 160px;
+    white-space: nowrap;
+}
+
+.company-table td {
+    color: var(--color-charcoal);
+}
+
+/* ── FAQ ── */
+.faq-list {
+    max-width: 700px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--color-linen);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    width: 100%;
+    padding: var(--space-lg) 0;
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-charcoal);
+    text-align: left;
+    cursor: pointer;
+    transition: color var(--transition-base);
+    background: none;
+    border: none;
+}
+
+.faq-question:hover {
+    color: var(--color-gold-muted);
+}
+
+.faq-question__icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    color: var(--color-gold);
+}
+
+.faq-question__icon::before,
+.faq-question__icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--color-gold);
+    transition: transform var(--transition-base);
+}
+
+.faq-question__icon::before {
+    width: 12px;
+    height: 1px;
+    transform: translate(-50%, -50%);
+}
+
+.faq-question__icon::after {
+    width: 1px;
+    height: 12px;
+    transform: translate(-50%, -50%);
+}
+
+.faq-item.is-open .faq-question__icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-base), padding var(--transition-base);
+}
+
+.faq-item.is-open .faq-answer {
+    max-height: 400px;
+}
+
+.faq-answer__content {
+    padding-bottom: var(--space-lg);
+    font-size: var(--font-size-sm);
+    color: var(--color-warm-gray);
+    line-height: var(--line-height-body);
+}
+
+/* ── Career History Table ── */
+.career-table {
+    max-width: 100% !important;
+}
+
+.career-table th {
+    width: 100px !important;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .company-message {
+        grid-template-columns: 1fr;
+    }
+
+    .company-message__image {
+        order: -1;
+        max-height: 360px;
+    }
+
+    .company-table th {
+        width: 120px;
+    }
+
+    .career-table th {
+        width: 80px !important;
+        font-size: var(--font-size-xs) !important;
+    }
+
+    .career-table td {
+        font-size: var(--font-size-xs) !important;
+    }
+}

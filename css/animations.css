@@ -1,0 +1,86 @@
+/* ============================================
+   Animations — Subtle, Aman-inspired
+   ============================================ */
+
+/* ── Reveal (fade up, very gentle) ── */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity var(--transition-very-slow), transform var(--transition-very-slow);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger children */
+.reveal-stagger>* {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal-stagger.is-visible>*:nth-child(1) {
+    transition-delay: 0.15s;
+}
+
+.reveal-stagger.is-visible>*:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.reveal-stagger.is-visible>*:nth-child(3) {
+    transition-delay: 0.45s;
+}
+
+.reveal-stagger.is-visible>*:nth-child(4) {
+    transition-delay: 0.6s;
+}
+
+.reveal-stagger.is-visible>*:nth-child(5) {
+    transition-delay: 0.75s;
+}
+
+.reveal-stagger.is-visible>* {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── Fade ── */
+.fade {
+    opacity: 0;
+    transition: opacity var(--transition-very-slow);
+}
+
+.fade.is-visible {
+    opacity: 1;
+}
+
+/* ── Image reveal (scale) ── */
+.img-reveal {
+    overflow: hidden;
+}
+
+.img-reveal img {
+    transform: scale(1.08);
+    transition: transform 1.5s var(--ease-out);
+}
+
+.img-reveal.is-visible img {
+    transform: scale(1);
+}
+
+/* ── Parallax placeholder ── */
+.parallax-slow {
+    will-change: transform;
+}
+
+/* ── Line draw ── */
+.line-draw {
+    width: 0;
+    transition: width 1.2s var(--ease-out);
+}
+
+.line-draw.is-visible {
+    width: 40px;
+}

@@ -1,0 +1,17 @@
+# robots.txt — NT Partner Support
+# https://ntps-security.com
+
+User-agent: *
+Allow: /
+
+# WordPress admin
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# Sitemap (static + WordPress)
+Sitemap: https://ntps-security.com/sitemap.xml
+Sitemap: https://ntps-security.com/sitemap_index.xml
+
+# Disallow dev paths
+Disallow: /tmp/
+Disallow: /.git/

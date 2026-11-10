@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会社概要 — About | NT Partner Support</title>
+    <meta name="description" content="NT Partner Supportの会社概要。福岡空港を拠点に、国家資格を保有したプロフェッショナルによるエグゼクティブプロテクションサービスを提供。">
+    <meta property="og:title" content="会社概要 — About | NT Partner Support">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages/service-detail.css">
+    <link rel="stylesheet" href="css/pages/company.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <a href="#page-hero" class="skip-nav">メインコンテンツへスキップ</a>
+
+    <!-- HEADER -->
+    <header class="header header--transparent" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" id="logo">
+                <span class="header__logo-name">NT Partner Support</span>
+                <span class="header__logo-tagline">Executive Protection</span>
+            </a>
+            <nav class="header__nav" id="main-nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html#services" class="header__nav-link">Services</a></li>
+                    <li><a href="index.html#credentials" class="header__nav-link">Credentials</a></li>
+                    <li><a href="company.html" class="header__nav-link">Company</a></li>
+                    <li><a href="recruit.html" class="header__nav-link">Careers</a></li>
+                    <li>
+                        <button class="header__lang" id="lang-toggle">
+                            <i data-lucide="globe"></i><span>JA</span>
+                        </button>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn--primary header__nav-cta" id="nav-cta">Enquire</a>
+            </nav>
+            <div style="display:flex;align-items:center;gap:var(--space-sm);">
+                <button class="header__lang header__lang-mobile" id="lang-toggle">
+                    <i data-lucide="globe"></i>
+                    <span>JA</span>
+                </button>
+                <button class="header__hamburger" id="hamburger" aria-label="メニュー">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="header__mobile-menu" id="mobile-menu">
+        <a href="index.html#services" class="header__nav-link">Services</a>
+        <a href="index.html#credentials" class="header__nav-link">Credentials</a>
+        <a href="company.html" class="header__nav-link">Company</a>
+        <a href="recruit.html" class="header__nav-link">Careers</a>
+        <button class="header__lang" id="lang-toggle" style="margin: var(--space-sm) 0;">
+            <i data-lucide="globe"></i>
+            <span>JA</span>
+        </button>
+        <a href="contact.html" class="btn btn--primary">Enquire</a>
+    </div>
+
+    <!-- ════════════════════════════════════════
+       PAGE HERO
+       ════════════════════════════════════════ -->
+    <section class="page-hero" id="page-hero">
+        <div class="page-hero__media">
+            <img src="images/company-office.png" alt="NT Partner Support Office" width="1920" height="1080">
+        </div>
+        <div class="container page-hero__content">
+            <nav class="page-hero__breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>About</span>
+            </nav>
+            <p class="page-hero__label">About Us</p>
+            <h1 class="page-hero__title" data-i18n="co.hero.title">会社概要</h1>
+            <p class="page-hero__subtitle" data-i18n="co.hero.sub">
+                福岡から、静かな威信を。
+            </p>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       REPRESENTATIVE MESSAGE
+       ════════════════════════════════════════ -->
+    <section class="section" id="message">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Message</span>
+                <h2 class="section-title" data-i18n="co.msg.title">代表挨拶</h2>
+                <hr class="section-divider">
+            </div>
+
+            <div class="company-message reveal">
+                <div>
+                    <p class="company-message__text" data-i18n="co.msg.p1">
+                        私たちNT Partner Supportは、<em>「目立たず、寄り添い、確実に守る」</em>を信条に、福岡空港を起点としたエグゼクティブプロテクションサービスを提供しております。
+                    </p>
+                    <br>
+                    <p class="company-message__text" data-i18n="co.msg.p2">
+                        前職では、外資系警備会社に立ち上げから約１３年間所属し、主に<em>米国路線の航空機保安警備</em>に携わってまいりました。その間、現場対応を実施しながら管理部門全般を受け持ち、各空港の事業所所長として空港警察署をはじめ、国の各機関、各空港管理会社および各契約航空会社の方々との対応にあたってまいりました。
+                    </p>
+                    <br>
+                    <p class="company-message__text" data-i18n="co.msg.p3">
+                        これらの経験を踏まえ、<em>各種別を超越したセキュリティ対応</em>で社会に貢献できるよう、日々研鑽を積み、社内教育も実施してまいります。
+                    </p>
+
+                    <p class="company-message__name" data-i18n="co.msg.name">Representative Director</p>
+                    <p class="company-message__role" data-i18n="co.msg.role">代表取締役　高橋　直己</p>
+                </div>
+                <div class="company-message__image img-reveal">
+                    <img src="images/hero-portrait.png" alt="代表" width="500" height="667" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       SECURITY BUSINESS CERTIFICATION
+       ════════════════════════════════════════ -->
+    <section class="section" id="security-certification" aria-labelledby="certification-title" lang="ja" dir="ltr">
+        <div class="container container--narrow">
+            <div class="section-header">
+                <span class="section-label">Certification</span>
+                <h2 class="section-title" id="certification-title">警備業認定標識</h2>
+                <hr class="section-divider">
+            </div>
+
+            <div class="certification">
+                <p class="certification__form">別記様式第2号（第6条関係）</p>
+                <table class="certification__table">
+                    <caption>警備業者</caption>
+                    <tbody>
+                        <tr>
+                            <th scope="row">認定をした公安委員会</th>
+                            <td>福岡県公安委員会</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">認定の番号</th>
+                            <td>第63001614号</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">有効期間</th>
+                            <td><time datetime="2026-10-20">令和8年10月20日</time>から<br><time datetime="2031-10-19">令和13年10月19日</time>まで</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">氏名又は名称</th>
+                            <td>株式会社 NT Partner Support</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">所在地</th>
+                            <td>福岡県福岡市中央区舞鶴二丁目2－7 1号室</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="certification__download">
+                    <a href="documents/security-certification-2026-10-20.pdf" target="_blank" rel="noopener" class="btn btn--dark">認定標識の原本を見る（PDF・別タブ）</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       CAREER HISTORY
+       ════════════════════════════════════════ -->
+    <section class="section section--ivory" id="career-history">
+        <div class="container container--narrow">
+            <div class="section-header reveal">
+                <span class="section-label">Career History</span>
+                <h2 class="section-title" data-i18n="co.history.title">代表略歴</h2>
+                <hr class="section-divider">
+            </div>
+
+            <div class="career-timeline reveal">
+                <table class="company-table career-table">
+                    <tbody>
+                        <tr>
+                            <th>1988年</th>
+                            <td>埼玉県立朝霞高校 <span
+                                    style="font-size: var(--font-size-xs); color: var(--color-warm-gray);">ラグビー部 第23期
+                                    第三列</span>　卒業</td>
+                        </tr>
+                        <tr>
+                            <th>1991年</th>
+                            <td>埼玉大学経済短期大学部 経済専攻科　卒業</td>
+                        </tr>
+                        <tr>
+                            <th>1995年</th>
+                            <td>専修大学 法学部 法律学科　卒業<br><span
+                                    style="font-size: var(--font-size-xs); color: var(--color-warm-gray);">司法試験受験、アパレル会社勤務</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>1999年</th>
+                            <td>アズメディア・ゴルフアカデミー〔オーストラリア校〕　在籍</td>
+                        </tr>
+                        <tr>
+                            <th>2000年</th>
+                            <td>居酒屋チェーン店　店長・本部勤務</td>
+                        </tr>
+                        <tr>
+                            <th>2001年</th>
+                            <td>某テーマパーク アトラクション　キャスト</td>
+                        </tr>
+                        <tr>
+                            <th>2003年</th>
+                            <td>ゴルフ用品・スポーツ用品関連会社　勤務<br><span
+                                    style="font-size: var(--font-size-xs); color: var(--color-warm-gray);">販売及びゴルフクラブ製造等に従事</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>2008年</th>
+                            <td>外資系セキュリティ会社　入社<br><span
+                                    style="font-size: var(--font-size-xs); color: var(--color-warm-gray);">主に米系航空会社対応
+                                    航空保安業務に従事</span></td>
+                        </tr>
+                        <tr>
+                            <th>2021年</th>
+                            <td>外資系セキュリティ会社 羽田支店長にて　退職<br>株式会社NT Partners Support <span
+                                    style="font-size: var(--font-size-xs); color: var(--color-warm-gray);">現 株式会社NT
+                                    Partner Support</span> 設立</td>
+                        </tr>
+                        <tr>
+                            <th>2025年</th>
+                            <td>株式会社NT Partner Support として、本店を神戸市から福岡市へ移転</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       COMPANY INFO
+       ════════════════════════════════════════ -->
+    <section class="section section--cream" id="company-info">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Company Information</span>
+                <h2 class="section-title" data-i18n="co.info.title">会社情報</h2>
+                <hr class="section-divider">
+            </div>
+
+            <table class="company-table reveal">
+                <tbody>
+                    <tr>
+                        <th data-i18n="co.tbl.name">会社名</th>
+                        <td data-i18n="co.tbl.name.v">株式会社 NT Partner Support（エヌティーパートナーサポート）<br><span
+                                style="font-size: var(--font-size-xs); color: var(--color-warm-gray);">旧 株式会社 NT
+                                Partners Support</span></td>
+                    </tr>
+                    <tr>
+                        <th data-i18n="co.tbl.ceo">代表者</th>
+                        <td data-i18n="co.tbl.ceo.v">代表取締役　高橋　直己</td>
+                    </tr>
+                    <tr>
+                        <th data-i18n="co.tbl.est">設立</th>
+                        <td data-i18n="co.tbl.est.v">2021年9月8日</td>
+                    </tr>
+                    <tr>
+                        <th data-i18n="co.tbl.loc">所在地</th>
+                        <td data-i18n="co.tbl.loc.v">福岡県福岡市中央区赤坂一丁目8-23 5F<br><span
+                                style="font-size: var(--font-size-xs); color: var(--color-warm-gray);">2025年、本店を神戸市から福岡市へ移転</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-i18n="co.tbl.biz">事業内容</th>
+                        <td data-i18n="co.tbl.biz.v">
+                            身辺警護（Executive Protection）<br>
+                            空港保安警備・VIP警護（Secure Arrival）<br>
+                            車両移動警護（Secure Transport）<br>
+                            施設・イベント警備（Venue Security）<br>
+                            セキュリティコンサルティング<br>
+                            警備業者サポート業務（書類作成・業務管理）<br>
+                            検定試験 事前対策講習
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-i18n="co.tbl.cert">保有資格</th>
+                        <td data-i18n="co.tbl.cert.v">
+                            警備員指導教育責任者（1号・2号・4号）<br>
+                            機械警備業務管理者<br>
+                            セキュリティ・プランナー<br>
+                            空港保安警備業務　一級<br>
+                            施設警備業務　一級<br>
+                            雑踏警備業務　二級<br>
+                            交通誘導警備業務　二級<br>
+                            AICPO（INTCPO）国際要人警護機構 会員〔ID所持者〕
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-i18n="co.tbl.lang">対応言語</th>
+                        <td data-i18n="co.tbl.lang.v">日本語 / 英語 / 韓国語 / 中国語</td>
+                    </tr>
+                    <tr>
+                        <th data-i18n="co.tbl.ins">賠償保険</th>
+                        <td data-i18n="co.tbl.ins.v">共通賠償 1名 1億円 / 1事故 10億円<br><span
+                                style="font-size: var(--font-size-xs); color: var(--color-warm-gray);">あいおいニッセイ同和損保</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th data-i18n="co.tbl.bank">取引金融機関</th>
+                        <td data-i18n="co.tbl.bank.v">佐賀銀行 / GMOあおぞらインターネット銀行</td>
+                    </tr>
+                    <tr>
+                        <th data-i18n="co.tbl.partner">関連取引先</th>
+                        <td data-i18n="co.tbl.partner.v">アルト・インターナショナル株式会社<br>ProAvsec International</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       QUALIFICATIONS & TRACK RECORD — Detail
+       ════════════════════════════════════════ -->
+    <section class="section section--cream" id="qualifications-detail">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Qualifications & Track Record</span>
+                <h2 class="section-title" data-i18n="co.qual.title">資格・履歴・対応可能業務</h2>
+                <hr class="section-divider">
+            </div>
+
+            <!-- 資格詳細 -->
+            <div class="company-detail reveal" style="margin-bottom: var(--space-3xl);">
+                <h3
+                    style="font-family: var(--font-display); font-size: var(--font-size-lg); margin-bottom: var(--space-lg); color: var(--color-charcoal);">
+                    <i data-lucide="shield-check"
+                        style="width:20px;height:20px;vertical-align:middle;color:var(--color-gold);margin-right:8px;"></i>
+                    <span data-i18n="co.q.sec1">警備業関連資格</span>
+                </h3>
+                <div style="display:grid; gap:var(--space-md); max-width:800px;">
+                    <div
+                        style="padding: var(--space-md) var(--space-lg); background: var(--color-ivory); border-left: 2px solid var(--color-gold);">
+                        <strong data-i18n="co.q.c1">警備員指導教育責任者</strong><br>
+                        <span style="color:var(--color-warm-gray); font-size:var(--font-size-sm);" data-i18n="co.q.c1d">
+                            1号（空港保安警備業務／施設警備業務）<br>
+                            2号（雑踏警備業務／交通誘導警備業務）<br>
+                            4号（身辺警護（身辺警備）業務）
+                        </span>
+                    </div>
+                    <div
+                        style="padding: var(--space-md) var(--space-lg); background: var(--color-ivory); border-left: 2px solid var(--color-gold);">
+                        <strong data-i18n="co.q.c2">機械警備業務管理者</strong>
+                    </div>
+                    <div
+                        style="padding: var(--space-md) var(--space-lg); background: var(--color-ivory); border-left: 2px solid var(--color-gold);">
+                        <strong data-i18n="co.q.c3">セキュリティ・プランナー</strong>
+                        <span style="color:var(--color-warm-gray); font-size:var(--font-size-sm);">（登録番号
+                            48-00635）</span>
+                    </div>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--space-md);">
+                        <div
+                            style="padding: var(--space-md) var(--space-lg); background: var(--color-ivory); border-left: 2px solid var(--color-gold);">
+                            <strong data-i18n="co.q.c4">空港保安警備業務</strong><br><span style="color:var(--color-gold);"
+                                data-i18n="co.q.c4g">一級</span>
+                        </div>
+                        <div
+                            style="padding: var(--space-md) var(--space-lg); background: var(--color-ivory); border-left: 2px solid var(--color-gold);">
+                            <strong data-i18n="co.q.c5">施設警備業務</strong><br><span style="color:var(--color-gold);"
+                                data-i18n="co.q.c5g">一級</span>
+                        </div>
+                        <div
+                            style="padding: var(--space-md) var(--space-lg); background: var(--color-ivory); border-left: 2px solid var(--color-gold);">
+                            <strong data-i18n="co.q.c6">雑踏警備業務</strong><br><span style="color:var(--color-warm-gray);"
+                                data-i18n="co.q.c6g">二級</span>
+                        </div>
+                        <div
+                            style="padding: var(--space-md) var(--space-lg); background: var(--color-ivory); border-left: 2px solid var(--color-gold);">
+                            <strong data-i18n="co.q.c7">交通誘導警備業務</strong><br><span style="color:var(--color-warm-gray);"
+                                data-i18n="co.q.c7g">二級</span>
+                        </div>
+                    </div>
+                    <div
+                        style="padding: var(--space-md) var(--space-lg); background: var(--color-ivory); border-left: 2px solid var(--color-gold);">
+                        <strong data-i18n="co.q.c8">AICPO（INTCPO）国際要人警護機構 会員〔ID所持者〕</strong><br>
+                        <span style="color:var(--color-warm-gray); font-size:var(--font-size-sm);"
+                            data-i18n="co.q.c8d">認定資格者（ID所持者）</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 対応可能業務 -->
+            <div class="company-detail reveal" style="margin-bottom: var(--space-3xl);">
+                <h3
+                    style="font-family: var(--font-display); font-size: var(--font-size-lg); margin-bottom: var(--space-lg); color: var(--color-charcoal);">
+                    <i data-lucide="briefcase"
+                        style="width:20px;height:20px;vertical-align:middle;color:var(--color-gold);margin-right:8px;"></i>
+                    <span data-i18n="co.q.sec2">対応可能業務（履歴含む）</span>
+                </h3>
+                <div style="display:grid; gap:var(--space-lg); max-width:800px;">
+                    <div style="padding: var(--space-lg); background: var(--color-ivory); border-radius: 4px;">
+                        <div
+                            style="display:flex; align-items:center; gap:var(--space-sm); margin-bottom:var(--space-sm);">
+                            <span
+                                style="background:var(--color-navy); color:var(--color-cream); padding:2px 10px; border-radius:2px; font-size:var(--font-size-xs); font-weight:500;">1号</span>
+                            <strong data-i18n="co.q.w1">空港保安 / 施設警備</strong>
+                        </div>
+                        <p style="color:var(--color-warm-gray); font-size:var(--font-size-sm); line-height:1.8;"
+                            data-i18n="co.q.w1d">
+                            航空会社、ハイブランド店（ドアパーソン）、テナントビル　ほか
+                        </p>
+                    </div>
+                    <div style="padding: var(--space-lg); background: var(--color-ivory); border-radius: 4px;">
+                        <div
+                            style="display:flex; align-items:center; gap:var(--space-sm); margin-bottom:var(--space-sm);">
+                            <span
+                                style="background:var(--color-navy); color:var(--color-cream); padding:2px 10px; border-radius:2px; font-size:var(--font-size-xs); font-weight:500;">2号</span>
+                            <strong data-i18n="co.q.w2">交通誘導 / 雑踏警備</strong>
+                        </div>
+                        <p style="color:var(--color-warm-gray); font-size:var(--font-size-sm); line-height:1.8;"
+                            data-i18n="co.q.w2d">
+                            コンサート、ショッピングモール、博覧会、会場イベント　ほか
+                        </p>
+                    </div>
+                    <div style="padding: var(--space-lg); background: var(--color-ivory); border-radius: 4px;">
+                        <div
+                            style="display:flex; align-items:center; gap:var(--space-sm); margin-bottom:var(--space-sm);">
+                            <span
+                                style="background:var(--color-navy); color:var(--color-cream); padding:2px 10px; border-radius:2px; font-size:var(--font-size-xs); font-weight:500;">4号</span>
+                            <strong data-i18n="co.q.w3">身辺警護</strong>
+                        </div>
+                        <p style="color:var(--color-warm-gray); font-size:var(--font-size-sm); line-height:1.8;"
+                            data-i18n="co.q.w3d">
+                            要人警護、会場ゲスト出演等身辺警護、ストーカー被害対応　ほか
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 周辺業務 -->
+            <div class="company-detail reveal">
+                <h3
+                    style="font-family: var(--font-display); font-size: var(--font-size-lg); margin-bottom: var(--space-lg); color: var(--color-charcoal);">
+                    <i data-lucide="list-checks"
+                        style="width:20px;height:20px;vertical-align:middle;color:var(--color-gold);margin-right:8px;"></i>
+                    <span data-i18n="co.q.sec3">警備業務関連 周辺業務（具体例）</span>
+                </h3>
+                <div style="display:grid; gap:var(--space-md); max-width:800px;">
+                    <div
+                        style="padding: var(--space-md) var(--space-lg); background: var(--color-ivory); border-radius: 4px; display:flex; gap:var(--space-md); align-items:flex-start;">
+                        <span
+                            style="background:var(--color-navy); color:var(--color-cream); padding:2px 10px; border-radius:2px; font-size:var(--font-size-xs); white-space:nowrap;">1号</span>
+                        <p style="font-size:var(--font-size-sm); color:var(--color-warm-gray); margin:0; line-height:1.8;"
+                            data-i18n="co.q.p1">
+                            空港その他、当該施設での安全確認・安全維持業務等（空港施設内での対テロ含む）
+                        </p>
+                    </div>
+                    <div
+                        style="padding: var(--space-md) var(--space-lg); background: var(--color-ivory); border-radius: 4px; display:flex; gap:var(--space-md); align-items:flex-start;">
+                        <span
+                            style="background:var(--color-navy); color:var(--color-cream); padding:2px 10px; border-radius:2px; font-size:var(--font-size-xs); white-space:nowrap;">2号</span>
+                        <p style="font-size:var(--font-size-sm); color:var(--color-warm-gray); margin:0; line-height:1.8;"
+                            data-i18n="co.q.p2">
+                            雑踏現場、群集が予想される現場での広報活動等（パチンコ店新装オープン対応等）
+                        </p>
+                    </div>
+                    <div
+                        style="padding: var(--space-md) var(--space-lg); background: var(--color-ivory); border-radius: 4px; display:flex; gap:var(--space-md); align-items:flex-start;">
+                        <span
+                            style="background:var(--color-navy); color:var(--color-cream); padding:2px 10px; border-radius:2px; font-size:var(--font-size-xs); white-space:nowrap;">4号</span>
+                        <p style="font-size:var(--font-size-sm); color:var(--color-warm-gray); margin:0; line-height:1.8;"
+                            data-i18n="co.q.p3">
+                            ご自宅⇄職場、その他日常生活圏内での安全確保のご相談、ご子息の安全確保等
+                        </p>
+                    </div>
+                </div>
+                <p style="margin-top:var(--space-xl); font-size:var(--font-size-sm); color:var(--color-warm-gray); max-width:800px; line-height:1.8;"
+                    data-i18n="co.q.note">
+                    上記に限らず、お気軽にご相談ください。実施前にお伺いし、面談させていただきます。<br>
+                    当日のご予定に於けるあらゆるリスクを洗い出し、お見積り（ご相談）いたします。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       CTA
+       ════════════════════════════════════════ -->
+    <section class="section page-cta">
+        <div class="container reveal">
+            <span class="section-label">Contact</span>
+            <h2 class="page-cta__title" data-i18n="co.cta.title">ご相談・お問い合わせ</h2>
+            <p class="page-cta__text" data-i18n="co.cta.text">セキュリティに関するご相談を24時間受付。</p>
+            <div class="page-cta__actions">
+                <a href="contact.html" class="btn btn--gold" data-i18n="co.cta.btn1">お問い合わせ</a>
+                <a href="contact.html" class="btn btn--ghost" data-i18n="co.cta.btn2">メールで相談</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="footer__brand-name">NT Partner Support</span>
+                    <span class="footer__brand-tagline">Executive Protection</span>
+                    <p class="footer__brand-desc" data-i18n="ft.desc">福岡空港を起点に、静かな威信でエグゼクティブの安全をお守りするプロテクションサービス。</p>
+                </div>
+                <div>
+                    <h3 class="footer__column-title">Services</h3>
+                    <ul class="footer__links">
+                        <li><a href="bodyguard.html" class="footer__link" data-i18n="ft.s.bp">身辺警護</a></li>
+                        <li><a href="airport-vip.html" class="footer__link" data-i18n="ft.s.ap">福岡空港VIP警護</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="ft.s.tr">車両移動警護</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="ft.s.ev">施設・イベント警備</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__column-title">Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="company.html" class="footer__link" data-i18n="ft.c.about">会社概要</a></li>
+                        <li><a href="index.html#credentials" class="footer__link" data-i18n="ft.c.cred">資格・実績</a></li>
+                        <li><a href="faq.html" class="footer__link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__column-title">Information</h3>
+                    <ul class="footer__links">
+                        <li><a href="recruit.html" class="footer__link" data-i18n="ft.i.careers">採用情報</a></li>
+                        <li><a href="contact.html" class="footer__link" data-i18n="ft.i.contact">お問い合わせ</a></li>
+                        <li><a href="/blog/" class="footer__link" data-i18n="ft.i.column">コラム</a></li>
+                        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright" data-i18n="ft.copy">&copy; 2026 株式会社NT Partner Support. All rights
+                    reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="privacy.html" class="footer__bottom-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

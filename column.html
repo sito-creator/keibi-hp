@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コラム — Column | NT Partner Support</title>
+    <meta name="description" content="NT Partner Supportのコラム。空港保安、身辺警護、セキュリティの最新動向や代表・高橋直己の業界コラムをお届けします。">
+    <meta property="og:title" content="コラム — Column | NT Partner Support">
+    <meta property="og:description" content="セキュリティの最前線から。プロフェッショナルによるコラム・業界知見。">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pages/service-detail.css">
+    <link rel="stylesheet" href="css/pages/blog.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <a href="#page-hero" class="skip-nav">メインコンテンツへスキップ</a>
+
+    <!-- HEADER -->
+    <header class="header header--transparent" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" id="logo">
+                <span class="header__logo-name">NT Partner Support</span>
+                <span class="header__logo-tagline">Executive Protection</span>
+            </a>
+            <nav class="header__nav" id="main-nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html#services" class="header__nav-link">Services</a></li>
+                    <li><a href="index.html#credentials" class="header__nav-link">Credentials</a></li>
+                    <li><a href="company.html" class="header__nav-link">Company</a></li>
+                    <li><a href="recruit.html" class="header__nav-link">Careers</a></li>
+                    <li>
+                        <button class="header__lang" id="lang-toggle">
+                            <i data-lucide="globe"></i><span>JA</span>
+                        </button>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn--primary header__nav-cta" id="nav-cta">Enquire</a>
+            </nav>
+            <div style="display:flex;align-items:center;gap:var(--space-sm);">
+                <button class="header__lang header__lang-mobile" id="lang-toggle">
+                    <i data-lucide="globe"></i>
+                    <span>JA</span>
+                </button>
+                <button class="header__hamburger" id="hamburger" aria-label="メニュー">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="header__mobile-menu" id="mobile-menu">
+        <a href="index.html#services" class="header__nav-link">Services</a>
+        <a href="index.html#credentials" class="header__nav-link">Credentials</a>
+        <a href="company.html" class="header__nav-link">Company</a>
+        <a href="recruit.html" class="header__nav-link">Careers</a>
+        <button class="header__lang" id="lang-toggle" style="margin: var(--space-sm) 0;">
+            <i data-lucide="globe"></i>
+            <span>JA</span>
+        </button>
+        <a href="contact.html" class="btn btn--primary">Enquire</a>
+    </div>
+
+    <!-- ════════════════════════════════════════
+         PAGE HERO
+         ════════════════════════════════════════ -->
+    <section class="page-hero" id="page-hero" style="min-height: 50vh;">
+        <div class="page-hero__media">
+            <img src="images/hero-cinematic.png" alt="Column" width="1920" height="1080">
+        </div>
+        <div class="container page-hero__content">
+            <nav class="page-hero__breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Column</span>
+            </nav>
+            <p class="page-hero__label">Insights & Column</p>
+            <h1 class="page-hero__title" data-i18n="col.hero.title">コラム</h1>
+            <p class="page-hero__subtitle" data-i18n="col.hero.sub">
+                セキュリティの最前線から。<br>
+                業界知見とプロフェッショナルの視点をお届けします。
+            </p>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         CATEGORY FILTER
+         ════════════════════════════════════════ -->
+    <section class="section">
+        <div class="container">
+
+            <div class="blog-categories reveal">
+                <button class="blog-category active" data-category="all">All</button>
+                <button class="blog-category" data-category="security">Security</button>
+                <button class="blog-category" data-category="airport">Airport</button>
+                <button class="blog-category" data-category="column">雑感</button>
+            </div>
+
+            <!-- ════════════════════════════════════════
+                 BLOG GRID
+                 ════════════════════════════════════════ -->
+            <div class="blog-grid reveal-stagger">
+
+                <!-- Featured Post -->
+                <a href="https://www.ntps.co.jp/blog/%e9%9b%91%e6%84%9f00003/" class="blog-featured" target="_blank"
+                    rel="noopener" data-category="column">
+                    <div class="blog-featured__image">
+                        <img src="images/blog-airport.png" alt="福岡空港" width="800" height="500" loading="lazy">
+                    </div>
+                    <div class="blog-featured__content">
+                        <span class="blog-featured__tag">Column</span>
+                        <h2 class="blog-featured__title" data-i18n="col.blog.featured">雑感…00003</h2>
+                        <p class="blog-featured__excerpt">
+                            代表・高橋直己による業界コラム第3弾。警備業界の今とこれからについて、現場の最前線から率直な所感をお伝えします。セキュリティの未来を考える上でのヒントがここに。
+                        </p>
+                        <span class="blog-featured__meta">2026.01.23</span>
+                        <span class="blog-featured__link">Read More <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Card 1 -->
+                <a href="https://www.ntps.co.jp/blog/%e9%9b%91%e6%84%9f-00002/" class="blog-card" target="_blank"
+                    rel="noopener" data-category="column">
+                    <div class="blog-card__image">
+                        <img src="images/blog-executive.png" alt="Executive Protection" width="600" height="375"
+                            loading="lazy">
+                    </div>
+                    <div class="blog-card__body">
+                        <span class="blog-card__tag">Column</span>
+                        <h3 class="blog-card__title" data-i18n="col.blog.2">雑感…00002</h3>
+                        <p class="blog-card__excerpt">
+                            警備業界で働くこと、プロフェッショナルとしての矜持について。外資系セキュリティ会社での経験を踏まえた率直な一考。
+                        </p>
+                        <div class="blog-card__meta">2025.12.15</div>
+                        <span class="blog-card__link">Read More <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="https://www.ntps.co.jp/blog/%e6%a5%ad%e7%95%8c%e7%84%a1%e9%a7%84%e8%a9%b1-00001/"
+                    class="blog-card" target="_blank" rel="noopener" data-category="security">
+                    <div class="blog-card__image">
+                        <img src="images/blog-vip-travel.png" alt="VIP Transport" width="600" height="375"
+                            loading="lazy">
+                    </div>
+                    <div class="blog-card__body">
+                        <span class="blog-card__tag">Security</span>
+                        <h3 class="blog-card__title" data-i18n="col.blog.3">警備とは…00001</h3>
+                        <p class="blog-card__excerpt">
+                            「警備」という仕事の本質とは何か。業界の内側から見た警備業務の意義と、プロフェッショナルとしてのあり方を探る。
+                        </p>
+                        <div class="blog-card__meta">2025.10.20</div>
+                        <span class="blog-card__link">Read More <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="https://www.ntps.co.jp/blog/%e9%9b%91%e6%84%9f-00001/" class="blog-card" target="_blank"
+                    rel="noopener" data-category="column">
+                    <div class="blog-card__image">
+                        <img src="images/recruit-training.png" alt="Training" width="600" height="375" loading="lazy">
+                    </div>
+                    <div class="blog-card__body">
+                        <span class="blog-card__tag">Column</span>
+                        <h3 class="blog-card__title" data-i18n="col.blog.4">雑感…00001</h3>
+                        <p class="blog-card__excerpt">
+                            NT Partner Supportを起ち上げて。代表・高橋直己が綴る、起業のきっかけと警備業への想い。
+                        </p>
+                        <div class="blog-card__meta">2025.10.01</div>
+                        <span class="blog-card__link">Read More <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Card 4 — お知らせ：身辺警護 -->
+                <a href="https://www.ntps.co.jp/info/%e7%a6%8f%e5%b2%a1%e3%81%a7%e3%80%8c%e8%ba%ab%e8%be%ba%e8%ad%a6%e8%ad%b7%e3%80%8d%e3%81%8a%e5%bc%95%e3%81%8d%e5%8f%97%e3%81%91%e3%81%84%e3%81%9f%e3%81%97%e3%81%be%e3%81%99%e3%80%82/"
+                    class="blog-card" target="_blank" rel="noopener" data-category="security">
+                    <div class="blog-card__image">
+                        <img src="images/service-bodyguard.png" alt="身辺警護" width="600" height="375" loading="lazy">
+                    </div>
+                    <div class="blog-card__body">
+                        <span class="blog-card__tag">Info</span>
+                        <h3 class="blog-card__title" data-i18n="col.blog.5">福岡で「身辺警護」お引き受けいたします</h3>
+                        <p class="blog-card__excerpt">
+                            福岡を拠点に、AICPO国際要人警護機構 会員〔ID所持者〕が身辺警護に対応。要人の安全を確実にお守りします。
+                        </p>
+                        <div class="blog-card__meta">2025.04.04</div>
+                        <span class="blog-card__link">Read More <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Card 5 — リクルート -->
+                <a href="https://www.ntps.co.jp/blog/%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b%e3%80%8c%e3%81%94%e5%bf%9c%e5%8b%9f%e3%80%8d%e3%81%8a%e5%be%85%e3%81%a1%e3%81%97%e3%81%a6%e3%81%84%e3%81%be%e3%81%99/"
+                    class="blog-card" target="_blank" rel="noopener" data-category="security">
+                    <div class="blog-card__image">
+                        <img src="images/recruit-team.png" alt="採用情報" width="600" height="375" loading="lazy">
+                    </div>
+                    <div class="blog-card__body">
+                        <span class="blog-card__tag">Recruit</span>
+                        <h3 class="blog-card__title" data-i18n="col.blog.6">「ご応募」お待ちしています</h3>
+                        <p class="blog-card__excerpt">
+                            福岡近郊でセキュリティ業務にご興味をお持ちの方、新規採用継続中です。週一からの勤務も相談可能。
+                        </p>
+                        <div class="blog-card__meta">2025.11.27</div>
+                        <span class="blog-card__link">Read More <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         CTA
+         ════════════════════════════════════════ -->
+    <section class="section page-cta">
+        <div class="container reveal">
+            <span class="section-label">Contact</span>
+            <h2 class="page-cta__title" data-i18n="col.cta.title">セキュリティに関するご相談</h2>
+            <p class="page-cta__text" data-i18n="col.cta.text">
+                24時間受付。Discreetな対応で、<br>
+                安心してご相談いただけます。
+            </p>
+            <div class="page-cta__actions">
+                <a href="contact.html" class="btn btn--gold" data-i18n="col.cta.btn1">お問い合わせ</a>
+                <a href="contact.html" class="btn btn--ghost" data-i18n="col.cta.btn2">メールで相談</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="footer__brand-name">NT Partner Support</span>
+                    <span class="footer__brand-tagline">Executive Protection</span>
+                    <p class="footer__brand-desc" data-i18n="ft.desc">福岡空港を起点に、静かな威信でエグゼクティブの安全をお守りするプロテクションサービス。</p>
+                </div>
+                <div>
+                    <h3 class="footer__column-title">Services</h3>
+                    <ul class="footer__links">
+                        <li><a href="bodyguard.html" class="footer__link" data-i18n="ft.s.bp">身辺警護</a></li>
+                        <li><a href="airport-vip.html" class="footer__link" data-i18n="ft.s.ap">福岡空港VIP警護</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="ft.s.tr">車両移動警護</a></li>
+                        <li><a href="#" class="footer__link" data-i18n="ft.s.ev">施設・イベント警備</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__column-title">Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="company.html" class="footer__link" data-i18n="ft.c.about">会社概要</a></li>
+                        <li><a href="index.html#credentials" class="footer__link" data-i18n="ft.c.cred">資格・実績</a></li>
+                        <li><a href="faq.html" class="footer__link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__column-title">Information</h3>
+                    <ul class="footer__links">
+                        <li><a href="recruit.html" class="footer__link" data-i18n="ft.i.careers">採用情報</a></li>
+                        <li><a href="contact.html" class="footer__link" data-i18n="ft.i.contact">お問い合わせ</a></li>
+                        <li><a href="/blog/" class="footer__link" style="color: var(--color-gold);"
+                                data-i18n="ft.i.column">コラム</a></li>
+                        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright" data-i18n="ft.copy">&copy; 2026 株式会社NT Partner Support. All rights
+                    reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="privacy.html" class="footer__bottom-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cta-float" id="cta-float">
+        <a href="contact.html" class="btn btn--gold" style="flex:1;text-align:center;"
+            data-i18n="col.float">ご相談・お問い合わせ</a>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // Category filter
+        document.querySelectorAll('.blog-category').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.blog-category').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const cat = btn.dataset.category;
+                document.querySelectorAll('.blog-featured, .blog-card').forEach(card => {
+                    if (cat === 'all' || card.dataset.category === cat) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
